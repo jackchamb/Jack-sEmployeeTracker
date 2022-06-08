@@ -1,8 +1,13 @@
-INSERT INTO employee(first_name, last_name, role_id, manager_id) 
-VALUES ('John', 'Smith', 1, NULL), ('Sally', 'Johnson', 2, 1), ('Bob', 'Jones', 3, NULL), ('Mary', 'Williams', 4, NULL), ('Mike', 'Brown', 5, NULL), ('Adam', 'Davis', 6, NULL);
+USE employeeTracker;
+INSERT INTO department (department_name) VALUES ('IT');
+("Sales"), ("Legal"), ("Finance"), ("Engineering");
 
-INSERT INTO department(department_name)
-VALUES ('IT'), ('HR'), ('Sales'), ('Marketing'), ('Admin');
+INSERT INTO role (title, salary, department_id) VALUES ('Manager', 100000, 1), 
+('Salesperson', 50000, 2), ('Lawyer', 140000, 3), ('Software Engineer', 130000, 4), 
+('Accountant', 90000, 5), ('Lead Engineer', 1000000, 1), ('leagal team lead', 1000000, 3),
+('Accountant Manager', 190000, 5);
 
-INSERT INTO role(title, salary, department_id)
-VALUES ('Manager', '150000', 1), ('Developer', '100000', 2), ('Salesperson', '80000', 3), ('Marketer', '70000', 4), ('Admin', '100000', 5);
+USE employeeTracker;
+INSERT INTO employee (first_name, last_name, role_id,) VALUES ('John', 'Doe', 1, NULL), 
+('Jane', 'Doe', 2, 1), ('John', 'Smith', 3, 1), ('Jimmy', 'Jonesy', 4, 1), ('Jack', 'Mack', 5, 1), ('Henry', 'Cline', 5, 2, NULL),
+('Chris', 'Looker', 2, 2), ('Tim', 'Grimes', 3, 2, NULL)
