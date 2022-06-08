@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS `employee`;
-CREATE DATABASE `employee`;
-USE `employee`;
+DROP DATABASE IF EXISTS employee;
+CREATE DATABASE employee;
+USE employee;
 
-CREATE TABLE employee (
+CREATE TABLE employee(
   id INTEGER PRIMARY KEY AUTO_INCREMENT,
   first_name VARCHAR(255) NOT NULL,
   last_name VARCHAR(255) NOT NULL,
